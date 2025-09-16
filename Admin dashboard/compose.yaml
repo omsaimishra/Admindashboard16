@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  admindashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: admindashboard
+    ports: 
+      - "3012:80"
+    restart: always
